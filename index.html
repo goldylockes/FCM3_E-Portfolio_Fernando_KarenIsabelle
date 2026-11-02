@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Field Notes | FCM 3</title>
+  <title>FCM3A_Fernando · Field Notes</title>
 
   <meta
     name="description"
@@ -1968,20 +1968,20 @@
        About the Author + Personal Framework on one continuous page
        ========================================================= */
 
-    .page-view[data-page="about-me"],
-    .page-view[data-page="about-me"] .author-section,
-    .page-view[data-page="about-me"] .home-framework {
+    .page-view[data-page="home"],
+    .page-view[data-page="home"] .author-section,
+    .page-view[data-page="home"] .home-framework {
       background: var(--ivory) !important;
     }
 
-    .page-view[data-page="about-me"] .author-section {
+    .page-view[data-page="home"] .author-section {
       padding-top: 112px;
       padding-bottom: 78px;
       border-top: 0 !important;
       border-bottom: 0 !important;
     }
 
-    .page-view[data-page="about-me"] .home-framework {
+    .page-view[data-page="home"] .home-framework {
       padding-top: 46px;
       border-top: 0 !important;
       border-bottom: 0 !important;
@@ -1994,12 +1994,12 @@
     }
 
     @media (max-width: 800px) {
-      .page-view[data-page="about-me"] .author-section {
+      .page-view[data-page="home"] .author-section {
         padding-top: 92px;
         padding-bottom: 58px;
       }
 
-      .page-view[data-page="about-me"] .home-framework {
+      .page-view[data-page="home"] .home-framework {
         padding-top: 34px;
       }
     }
@@ -2009,7 +2009,7 @@
        ABOUT ME — full first-screen editorial spread
        ========================================================= */
 
-    .page-view[data-page="about-me"] .author-section {
+    .page-view[data-page="home"] .author-section {
       min-height: calc(100vh - 56px);
       box-sizing: border-box;
       padding-top: 72px !important;
@@ -2018,34 +2018,34 @@
       align-items: center;
     }
 
-    .page-view[data-page="about-me"] .author-section .section-inner {
+    .page-view[data-page="home"] .author-section .section-inner {
       width: 100%;
     }
 
-    .page-view[data-page="about-me"] .author-grid {
+    .page-view[data-page="home"] .author-grid {
       grid-template-columns: minmax(290px, .72fr) minmax(0, 1.5fr);
       gap: 88px;
       align-items: center;
     }
 
-    .page-view[data-page="about-me"] .author-mark {
+    .page-view[data-page="home"] .author-mark {
       width: min(100%, 340px);
       aspect-ratio: 4 / 5;
       border-radius: 32px;
     }
 
-    .page-view[data-page="about-me"] .author-mark img {
+    .page-view[data-page="home"] .author-mark img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center 50%;
     }
 
-    .page-view[data-page="about-me"] .author-copy {
+    .page-view[data-page="home"] .author-copy {
       max-width: 760px;
     }
 
-    .page-view[data-page="about-me"] .author-copy p + p {
+    .page-view[data-page="home"] .author-copy p + p {
       margin-top: 18px;
     }
 
@@ -2075,23 +2075,23 @@
     }
 
     /* Let Personal Framework begin only after the About spread. */
-    .page-view[data-page="about-me"] .home-framework {
+    .page-view[data-page="home"] .home-framework {
       padding-top: 88px;
     }
 
     @media (max-width: 900px) {
-      .page-view[data-page="about-me"] .author-section {
+      .page-view[data-page="home"] .author-section {
         min-height: auto;
         padding-top: 96px !important;
         padding-bottom: 76px !important;
       }
 
-      .page-view[data-page="about-me"] .author-grid {
+      .page-view[data-page="home"] .author-grid {
         grid-template-columns: 1fr;
         gap: 42px;
       }
 
-      .page-view[data-page="about-me"] .author-mark {
+      .page-view[data-page="home"] .author-mark {
         width: min(78vw, 360px);
         aspect-ratio: 4 / 5;
       }
@@ -2102,7 +2102,7 @@
        ABOUT ME — refined, calmer first-screen layout
        ========================================================= */
 
-    .page-view[data-page="about-me"] .author-section {
+    .page-view[data-page="home"] .author-section {
       min-height: calc(100vh - 56px);
       box-sizing: border-box;
       padding-top: 76px !important;
@@ -2111,18 +2111,18 @@
       align-items: center;
     }
 
-    .page-view[data-page="about-me"] .author-section .section-inner {
+    .page-view[data-page="home"] .author-section .section-inner {
       width: 100%;
     }
 
-    .page-view[data-page="about-me"] .author-grid {
+    .page-view[data-page="home"] .author-grid {
       grid-template-columns: 0.55fr 1.55fr;
       gap: 82px;
       align-items: center;
     }
 
     /* Restore the original square placeholder size. */
-    .page-view[data-page="about-me"] .author-mark {
+    .page-view[data-page="home"] .author-mark {
       width: min(100%, 240px) !important;
       aspect-ratio: 1 / 1 !important;
       border-radius: 28px;
@@ -2130,7 +2130,7 @@
       justify-self: center;
     }
 
-    .page-view[data-page="about-me"] .author-mark img {
+    .page-view[data-page="home"] .author-mark img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -2138,19 +2138,19 @@
     }
 
     /* Quieter name scale — still editorial, no longer dominating the page. */
-    .page-view[data-page="about-me"] .author-name {
+    .page-view[data-page="home"] .author-name {
       max-width: 760px;
       font-size: clamp(2.7rem, 4.2vw, 4rem) !important;
       line-height: 1.02;
     }
 
-    .page-view[data-page="about-me"] .author-copy {
+    .page-view[data-page="home"] .author-copy {
       max-width: 760px;
       font-size: .98rem;
       line-height: 1.72;
     }
 
-    .page-view[data-page="about-me"] .author-copy p + p {
+    .page-view[data-page="home"] .author-copy p + p {
       margin-top: 17px;
     }
 
@@ -2160,28 +2160,28 @@
     }
 
     /* Personal Framework begins after the About screen. */
-    .page-view[data-page="about-me"] .home-framework {
+    .page-view[data-page="home"] .home-framework {
       padding-top: 88px;
     }
 
     @media (max-width: 900px) {
-      .page-view[data-page="about-me"] .author-section {
+      .page-view[data-page="home"] .author-section {
         min-height: auto;
         padding-top: 94px !important;
         padding-bottom: 72px !important;
       }
 
-      .page-view[data-page="about-me"] .author-grid {
+      .page-view[data-page="home"] .author-grid {
         grid-template-columns: 1fr;
         gap: 40px;
       }
 
-      .page-view[data-page="about-me"] .author-mark {
+      .page-view[data-page="home"] .author-mark {
         width: 220px !important;
         justify-self: start;
       }
 
-      .page-view[data-page="about-me"] .author-name {
+      .page-view[data-page="home"] .author-name {
         font-size: clamp(2.5rem, 9vw, 3.6rem) !important;
       }
     }
@@ -2191,25 +2191,25 @@
        ABOUT ME — rebalance first screen
        ========================================================= */
 
-    .page-view[data-page="about-me"] .author-grid {
+    .page-view[data-page="home"] .author-grid {
       grid-template-columns: 300px minmax(0, 920px) !important;
       gap: 72px !important;
       justify-content: center;
       align-items: center;
     }
 
-    .page-view[data-page="about-me"] .author-mark {
+    .page-view[data-page="home"] .author-mark {
       width: 240px !important;
       justify-self: center !important;
     }
 
-    .page-view[data-page="about-me"] .author-name {
+    .page-view[data-page="home"] .author-name {
       max-width: 900px !important;
       font-size: clamp(2.55rem, 3.7vw, 3.55rem) !important;
       line-height: 1.03;
     }
 
-    .page-view[data-page="about-me"] .author-copy {
+    .page-view[data-page="home"] .author-copy {
       max-width: 900px !important;
       font-size: .96rem;
       line-height: 1.68;
@@ -2219,7 +2219,7 @@
        PERSONAL FRAMEWORK — compact enough to read in one screen
        ========================================================= */
 
-    .page-view[data-page="about-me"] .home-framework {
+    .page-view[data-page="home"] .home-framework {
       min-height: calc(100vh - 56px);
       box-sizing: border-box;
       padding-top: 56px !important;
@@ -2228,46 +2228,46 @@
       align-items: center;
     }
 
-    .page-view[data-page="about-me"] .home-framework .section-inner {
+    .page-view[data-page="home"] .home-framework .section-inner {
       width: 100%;
     }
 
-    .page-view[data-page="about-me"] .framework-heading {
+    .page-view[data-page="home"] .framework-heading {
       max-width: 760px;
       margin-bottom: 28px;
     }
 
-    .page-view[data-page="about-me"] .framework-heading h2 {
+    .page-view[data-page="home"] .framework-heading h2 {
       margin-top: 8px;
       font-size: clamp(2.5rem, 4.2vw, 3.8rem) !important;
       line-height: 1.02;
       letter-spacing: -0.03em;
     }
 
-    .page-view[data-page="about-me"] .framework-list {
+    .page-view[data-page="home"] .framework-list {
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
 
-    .page-view[data-page="about-me"] .framework-row {
+    .page-view[data-page="home"] .framework-row {
       grid-template-columns: 110px 220px minmax(0, 1fr) !important;
       gap: 28px !important;
       padding: 26px 0 !important;
       align-items: start;
     }
 
-    .page-view[data-page="about-me"] .framework-number {
+    .page-view[data-page="home"] .framework-number {
       font-size: 2.2rem !important;
       line-height: 1;
     }
 
-    .page-view[data-page="about-me"] .framework-label {
+    .page-view[data-page="home"] .framework-label {
       padding-top: 4px;
       font-size: .66rem !important;
       line-height: 1.45;
     }
 
-    .page-view[data-page="about-me"] .framework-row p {
+    .page-view[data-page="home"] .framework-row p {
       margin: 0;
       max-width: 900px;
       font-family: var(--serif);
@@ -2277,42 +2277,42 @@
     }
 
     @media (max-width: 980px) {
-      .page-view[data-page="about-me"] .author-grid {
+      .page-view[data-page="home"] .author-grid {
         grid-template-columns: 220px minmax(0, 1fr) !important;
         gap: 46px !important;
       }
 
-      .page-view[data-page="about-me"] .author-mark {
+      .page-view[data-page="home"] .author-mark {
         width: 210px !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row {
+      .page-view[data-page="home"] .framework-row {
         grid-template-columns: 75px 170px minmax(0, 1fr) !important;
         gap: 18px !important;
       }
     }
 
     @media (max-width: 760px) {
-      .page-view[data-page="about-me"] .author-grid {
+      .page-view[data-page="home"] .author-grid {
         grid-template-columns: 1fr !important;
       }
 
-      .page-view[data-page="about-me"] .author-mark {
+      .page-view[data-page="home"] .author-mark {
         width: 200px !important;
         justify-self: start !important;
       }
 
-      .page-view[data-page="about-me"] .home-framework {
+      .page-view[data-page="home"] .home-framework {
         min-height: auto;
         padding-top: 70px !important;
         padding-bottom: 70px !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row {
+      .page-view[data-page="home"] .framework-row {
         grid-template-columns: 62px 1fr !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row p {
+      .page-view[data-page="home"] .framework-row p {
         grid-column: 2;
         font-size: 1.16rem !important;
       }
@@ -2323,76 +2323,76 @@
        ABOUT ME — restore proper editorial margins
        ========================================================= */
 
-    .page-view[data-page="about-me"] .author-section .section-inner,
-    .page-view[data-page="about-me"] .home-framework .section-inner {
+    .page-view[data-page="home"] .author-section .section-inner,
+    .page-view[data-page="home"] .home-framework .section-inner {
       width: min(var(--max-width), 88%) !important;
       margin-left: auto !important;
       margin-right: auto !important;
     }
 
     /* Personal Framework: same layout, just a little smaller and tighter. */
-    .page-view[data-page="about-me"] .home-framework {
+    .page-view[data-page="home"] .home-framework {
       min-height: calc(100vh - 56px);
       padding-top: 42px !important;
       padding-bottom: 42px !important;
     }
 
-    .page-view[data-page="about-me"] .framework-heading {
+    .page-view[data-page="home"] .framework-heading {
       max-width: 760px;
       margin-bottom: 24px;
     }
 
-    .page-view[data-page="about-me"] .framework-heading h2 {
+    .page-view[data-page="home"] .framework-heading h2 {
       font-size: clamp(2.35rem, 3.7vw, 3.35rem) !important;
       line-height: 1.03;
     }
 
-    .page-view[data-page="about-me"] .framework-row {
+    .page-view[data-page="home"] .framework-row {
       grid-template-columns: 86px 190px minmax(0, 1fr) !important;
       gap: 24px !important;
       padding: 22px 0 !important;
     }
 
-    .page-view[data-page="about-me"] .framework-number {
+    .page-view[data-page="home"] .framework-number {
       font-size: 2rem !important;
     }
 
-    .page-view[data-page="about-me"] .framework-label {
+    .page-view[data-page="home"] .framework-label {
       padding-top: 3px;
       font-size: .63rem !important;
       line-height: 1.45;
     }
 
-    .page-view[data-page="about-me"] .framework-row p {
+    .page-view[data-page="home"] .framework-row p {
       max-width: none !important;
       font-size: clamp(1.08rem, 1.45vw, 1.34rem) !important;
       line-height: 1.34 !important;
     }
 
     @media (max-width: 980px) {
-      .page-view[data-page="about-me"] .framework-row {
+      .page-view[data-page="home"] .framework-row {
         grid-template-columns: 70px 165px minmax(0, 1fr) !important;
         gap: 18px !important;
       }
     }
 
     @media (max-width: 760px) {
-      .page-view[data-page="about-me"] .author-section .section-inner,
-      .page-view[data-page="about-me"] .home-framework .section-inner {
+      .page-view[data-page="home"] .author-section .section-inner,
+      .page-view[data-page="home"] .home-framework .section-inner {
         width: 88% !important;
       }
 
-      .page-view[data-page="about-me"] .home-framework {
+      .page-view[data-page="home"] .home-framework {
         min-height: auto;
         padding-top: 68px !important;
         padding-bottom: 68px !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row {
+      .page-view[data-page="home"] .framework-row {
         grid-template-columns: 58px 1fr !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row p {
+      .page-view[data-page="home"] .framework-row p {
         grid-column: 2;
         font-size: 1.08rem !important;
       }
@@ -2403,12 +2403,12 @@
        ABOUT ME — lower the text slightly to reduce dead space
        ========================================================= */
 
-    .page-view[data-page="about-me"] .author-grid > div:last-child {
+    .page-view[data-page="home"] .author-grid > div:last-child {
       transform: translateY(30px);
     }
 
     @media (max-width: 900px) {
-      .page-view[data-page="about-me"] .author-grid > div:last-child {
+      .page-view[data-page="home"] .author-grid > div:last-child {
         transform: none;
       }
     }
@@ -2417,12 +2417,12 @@
        ABOUT ME — actual portrait refinement
        ========================================================= */
 
-    .page-view[data-page="about-me"] .author-grid {
+    .page-view[data-page="home"] .author-grid {
       grid-template-columns: 280px minmax(0, 920px) !important;
       gap: 64px !important;
     }
 
-    .page-view[data-page="about-me"] .author-mark {
+    .page-view[data-page="home"] .author-mark {
       width: min(100%, 250px) !important;
       aspect-ratio: 4 / 5 !important;
       border-radius: 28px !important;
@@ -2431,7 +2431,7 @@
       align-self: center;
     }
 
-    .page-view[data-page="about-me"] .author-mark img {
+    .page-view[data-page="home"] .author-mark img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -2439,22 +2439,22 @@
     }
 
     @media (max-width: 980px) {
-      .page-view[data-page="about-me"] .author-grid {
+      .page-view[data-page="home"] .author-grid {
         grid-template-columns: 230px minmax(0, 1fr) !important;
         gap: 42px !important;
       }
 
-      .page-view[data-page="about-me"] .author-mark {
+      .page-view[data-page="home"] .author-mark {
         width: 210px !important;
       }
     }
 
     @media (max-width: 760px) {
-      .page-view[data-page="about-me"] .author-grid {
+      .page-view[data-page="home"] .author-grid {
         grid-template-columns: 1fr !important;
       }
 
-      .page-view[data-page="about-me"] .author-mark {
+      .page-view[data-page="home"] .author-mark {
         width: 210px !important;
         justify-self: start !important;
       }
@@ -2621,9 +2621,9 @@
     body,
     .page-view:not([data-page="closing"]),
     .page-view[data-page="home"] .intro,
-    .page-view[data-page="about-me"],
-    .page-view[data-page="about-me"] .author-section,
-    .page-view[data-page="about-me"] .home-framework,
+    .page-view[data-page="home"],
+    .page-view[data-page="home"] .author-section,
+    .page-view[data-page="home"] .home-framework,
     .page-view[data-page="reflections"],
     .journal-index,
     .page-view[data-page="reflections"] .week-panel,
@@ -3146,73 +3146,73 @@
       }
 
       /* ---------- ABOUT ME ---------- */
-      .page-view[data-page="about-me"] .author-section {
+      .page-view[data-page="home"] .author-section {
         min-height: auto !important;
         padding: 92px 0 64px !important;
       }
 
-      .page-view[data-page="about-me"] .author-grid {
+      .page-view[data-page="home"] .author-grid {
         grid-template-columns: 1fr !important;
         gap: 34px !important;
         justify-content: stretch !important;
       }
 
-      .page-view[data-page="about-me"] .author-grid > div:last-child {
+      .page-view[data-page="home"] .author-grid > div:last-child {
         transform: none !important;
       }
 
-      .page-view[data-page="about-me"] .author-mark {
+      .page-view[data-page="home"] .author-mark {
         width: 176px !important;
         aspect-ratio: 4 / 5 !important;
         justify-self: start !important;
         border-radius: 22px !important;
       }
 
-      .page-view[data-page="about-me"] .author-name {
+      .page-view[data-page="home"] .author-name {
         max-width: none !important;
         font-size: clamp(2.45rem, 12vw, 3.35rem) !important;
         line-height: .98;
       }
 
-      .page-view[data-page="about-me"] .author-meta {
+      .page-view[data-page="home"] .author-meta {
         line-height: 1.6;
       }
 
-      .page-view[data-page="about-me"] .author-copy {
+      .page-view[data-page="home"] .author-copy {
         max-width: none !important;
         font-size: .96rem;
         line-height: 1.7;
       }
 
-      .page-view[data-page="about-me"] .home-framework {
+      .page-view[data-page="home"] .home-framework {
         min-height: auto !important;
         padding: 64px 0 72px !important;
       }
 
-      .page-view[data-page="about-me"] .framework-heading {
+      .page-view[data-page="home"] .framework-heading {
         margin-bottom: 26px;
       }
 
-      .page-view[data-page="about-me"] .framework-heading h2 {
+      .page-view[data-page="home"] .framework-heading h2 {
         font-size: clamp(2.35rem, 11vw, 3.15rem) !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row {
+      .page-view[data-page="home"] .framework-row {
         grid-template-columns: 48px minmax(0, 1fr) !important;
         gap: 14px !important;
         padding: 25px 0 !important;
       }
 
-      .page-view[data-page="about-me"] .framework-number {
+      .page-view[data-page="home"] .framework-number {
         font-size: 2rem !important;
       }
 
-      .page-view[data-page="about-me"] .framework-label {
+      .page-view[data-page="home"] .framework-label {
         padding-top: 4px;
         font-size: .61rem !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row p {
+      .page-view[data-page="home"] .framework-row p {
         grid-column: 1 / -1 !important;
         margin-top: 8px !important;
         font-size: 1.08rem !important;
@@ -3499,26 +3499,87 @@
       }
 
       /* Put 01–03 and their labels on the same visual line. */
-      .page-view[data-page="about-me"] .framework-row {
+      .page-view[data-page="home"] .framework-row {
         grid-template-columns: 56px minmax(0, 1fr) !important;
         align-items: center !important;
         column-gap: 16px !important;
       }
 
-      .page-view[data-page="about-me"] .framework-number {
+      .page-view[data-page="home"] .framework-number {
         line-height: 1 !important;
         align-self: center !important;
       }
 
-      .page-view[data-page="about-me"] .framework-label {
+      .page-view[data-page="home"] .framework-label {
         padding-top: 0 !important;
         margin: 0 !important;
         line-height: 1.25 !important;
         align-self: center !important;
       }
 
-      .page-view[data-page="about-me"] .framework-row p {
+      .page-view[data-page="home"] .framework-row p {
         grid-column: 1 / -1 !important;
+      }
+    }
+
+  
+    /* =========================================================
+       FACULTY-ALIGNED INFORMATION ARCHITECTURE
+       Visual identity intentionally unchanged.
+       ========================================================= */
+
+    /* Home now contains the portrait/bio + personal framework. */
+    .page-view[data-page="home"] .author-section,
+    .page-view[data-page="home"] .home-framework,
+    .page-view[data-page="home"] .intro {
+      background: var(--site-paper) !important;
+    }
+
+    /* Preserve a clean transition from the photographic hero. */
+    .page-view[data-page="home"] .author-section {
+      border-top: 0 !important;
+    }
+
+    /* Editorial project summary: no cards, just structured rules/type. */
+    .project-brief {
+      margin: 8px 0 58px;
+      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 56px;
+    }
+
+    .project-brief-item {
+      padding: 20px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project-brief-item small {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--olive);
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .project-brief-item p {
+      max-width: 620px;
+      margin: 0;
+      color: var(--charcoal);
+      font-size: .94rem;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 760px) {
+      .project-brief {
+        grid-template-columns: 1fr;
+        margin-bottom: 42px;
+      }
+
+      .project-brief-item {
+        padding: 18px 0 20px;
       }
     }
 
@@ -3528,7 +3589,7 @@
 <body data-active-page="home">
 
   <nav class="site-nav" id="siteNav">
-    <a class="brand" href="#home" data-page-link="home">Field Notes · FCM 3</a>
+    <a class="brand" href="#home" data-page-link="home">FCM3A_Fernando</a>
 
     <button
       class="mobile-nav-toggle"
@@ -3543,10 +3604,9 @@
 
     <ul class="nav-links" id="primaryNav">
       <li><a href="#home" data-page-link="home">Home</a></li>
-      <li><a href="#about-me" data-page-link="about-me">About Me</a></li>
-      <li><a href="#reflections" data-page-link="reflections">Reflections</a></li>
-      <li><a href="#projects" data-page-link="projects">Projects</a></li>
       <li><a href="#documentation" data-page-link="documentation">Documentation</a></li>
+      <li><a href="#projects" data-page-link="projects" title="Community Program / Project Update">Community Project</a></li>
+      <li><a href="#reflections" data-page-link="reflections" title="Weekly Insights and Reflections">Weekly Reflections</a></li>
       <li><a href="#closing" data-page-link="closing">Closing</a></li>
     </ul>
   </nav>
@@ -3563,47 +3623,8 @@
     <div class="scroll-note">Scroll to begin ↓</div>
   </header>
 
-  <section class="intro" id="about">
-    <div class="section-inner intro-grid">
-      <div>
-        <div class="eyebrow">Introduction</div>
-      </div>
-
-      <div>
-        <h2>Medicine does not happen in isolation.</h2>
-
-        <div class="intro-copy">
-          <p>
-            Family and Community Medicine asks us to see patients
-            beyond disease alone—to understand the families,
-            communities, environments, and systems that shape health.
-          </p>
-
-          <br>
-
-          <p>
-            This journal follows that perspective across each week
-            of FCM 3, from revisiting the foundations of primary
-            health care to returning to the community itself.
-          </p>
-
-          <div class="keywords">
-            <span class="keyword">Family</span>
-            <span class="keyword">Community</span>
-            <span class="keyword">Equity</span>
-            <span class="keyword">Primary Care</span>
-            <span class="keyword">Reflection</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  </main>
-
-  <main class="page-view" data-page="about-me">
-  <section class="author-section" id="author">
+  <!-- Faculty-required HOME content: About the Student, Expectations, Mission, Vision -->
+<section class="author-section" id="author">
     <div class="section-inner author-grid">
 
       <div class="author-mark">
@@ -3611,7 +3632,7 @@
       </div>
 
       <div>
-        <div class="eyebrow">About the Author</div>
+        <div class="eyebrow">About the Student</div>
 
         <h2 class="author-name">
           Karen Isabelle F. Fernando
@@ -3704,6 +3725,43 @@
       </div>
     </div>
   </section>
+
+  <section class="intro" id="about">
+    <div class="section-inner intro-grid">
+      <div>
+        <div class="eyebrow">Introduction</div>
+      </div>
+
+      <div>
+        <h2>Medicine does not happen in isolation.</h2>
+
+        <div class="intro-copy">
+          <p>
+            Family and Community Medicine asks us to see patients
+            beyond disease alone—to understand the families,
+            communities, environments, and systems that shape health.
+          </p>
+
+          <br>
+
+          <p>
+            This journal follows that perspective across each week
+            of FCM 3, from revisiting the foundations of primary
+            health care to returning to the community itself.
+          </p>
+
+          <div class="keywords">
+            <span class="keyword">Family</span>
+            <span class="keyword">Community</span>
+            <span class="keyword">Equity</span>
+            <span class="keyword">Primary Care</span>
+            <span class="keyword">Reflection</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   </main>
 
@@ -5142,6 +5200,33 @@
         </p>
       </div>
 
+      <div class="project-brief" aria-label="Community project overview">
+        <div class="project-brief-item">
+          <small>Assigned Community</small>
+          <p>Barangay 655 · Intramuros, Manila</p>
+        </div>
+
+        <div class="project-brief-item">
+          <small>Priority Health Problem</small>
+          <p>Acute respiratory illnesses (ARIs), identified as the community's top-priority health concern.</p>
+        </div>
+
+        <div class="project-brief-item">
+          <small>Target Populations</small>
+          <p>Daycare children ages 3–5, Child Development Workers, and caregivers.</p>
+        </div>
+
+        <div class="project-brief-item">
+          <small>Program Direction</small>
+          <p>Age-appropriate ARI prevention and hygiene education supported by practical demonstrations, IEC materials, classroom reinforcement, and community participation.</p>
+        </div>
+
+        <div class="project-brief-item">
+          <small>Current Phase</small>
+          <p>Implementation preparation: refining objectives, timelines, materials, stakeholder coordination, and activity plans.</p>
+        </div>
+      </div>
+
       <div class="project-timeline">
         <article class="project-step">
           <div class="project-week"><span>Week</span>04</div>
@@ -5507,7 +5592,6 @@
 
       const validPages = [
         "home",
-        "about-me",
         "reflections",
         "projects",
         "documentation",
