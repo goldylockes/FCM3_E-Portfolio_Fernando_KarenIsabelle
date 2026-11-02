@@ -3583,6 +3583,57 @@
       }
     }
 
+  
+    /* =========================================================
+       HOME — unified editorial rhythm
+       Disable old full-screen heights now that these sections
+       live together on a single Home page.
+       ========================================================= */
+
+    @media (min-width: 761px) {
+      .page-view[data-page="home"] .author-section {
+        min-height: 0 !important;
+        height: auto !important;
+        display: block !important;
+        padding: 88px 0 0 !important;
+      }
+
+      .page-view[data-page="home"] .home-framework {
+        min-height: 0 !important;
+        height: auto !important;
+        display: block !important;
+        padding: 88px 0 0 !important;
+      }
+
+      .page-view[data-page="home"] .intro {
+        min-height: 0 !important;
+        height: auto !important;
+        padding: 88px 0 108px !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .page-view[data-page="home"] .author-section {
+        min-height: 0 !important;
+        height: auto !important;
+        display: block !important;
+        padding: 72px 0 0 !important;
+      }
+
+      .page-view[data-page="home"] .home-framework {
+        min-height: 0 !important;
+        height: auto !important;
+        display: block !important;
+        padding: 72px 0 0 !important;
+      }
+
+      .page-view[data-page="home"] .intro {
+        min-height: 0 !important;
+        height: auto !important;
+        padding: 72px 0 76px !important;
+      }
+    }
+
   </style>
 </head>
 
@@ -3623,7 +3674,7 @@
     <div class="scroll-note">Scroll to begin ↓</div>
   </header>
 
-  <!-- Faculty-required HOME content: About the Student, Expectations, Mission, Vision -->
+  <!-- Faculty-required HOME content: About Me, Expectations, Mission, Vision -->
 <section class="author-section" id="author">
     <div class="section-inner author-grid">
 
@@ -3632,7 +3683,7 @@
       </div>
 
       <div>
-        <div class="eyebrow">About the Student</div>
+        <div class="eyebrow">About Me</div>
 
         <h2 class="author-name">
           Karen Isabelle F. Fernando
