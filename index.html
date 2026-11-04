@@ -3702,6 +3702,80 @@
       }
     }
 
+  
+    /* =========================================================
+       WEEK 14 PRESENTATION IMAGE
+       ========================================================= */
+    .week14-entry-photo {
+      margin: 38px 0 42px;
+    }
+
+    .week14-entry-photo img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .week14-entry-photo figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: .62rem;
+      line-height: 1.5;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    /* Five documentation images: 3 + 2, with the final row centered. */
+    @media (min-width: 981px) {
+      .documentation-gallery {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+      }
+
+      .documentation-photo {
+        grid-column: span 2 !important;
+      }
+
+      .documentation-photo:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+      }
+
+      .documentation-photo:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+      }
+    }
+
+    @media (max-width: 980px) and (min-width: 761px) {
+      .documentation-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .documentation-photo {
+        grid-column: auto !important;
+      }
+
+      .documentation-photo:nth-child(5) {
+        grid-column: 1 / -1 !important;
+        width: calc(50% - 17px);
+        justify-self: center;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .week14-entry-photo {
+        margin: 32px 0 36px;
+      }
+
+      .week14-entry-photo img {
+        aspect-ratio: 16 / 9;
+      }
+
+      .documentation-photo:nth-child(5) {
+        width: 100% !important;
+        grid-column: auto !important;
+      }
+    }
+
   </style>
 </head>
 
@@ -5390,6 +5464,11 @@
           context.
         </p>
 
+        <figure class="week14-entry-photo">
+          <img src="week14-inside-out-presentation.png" alt="Inside Out, Germs Out project presentation title slide">
+          <figcaption>Graded project presentation · <em>Inside Out, Germs Out</em> · Week 14 · November 04, 2026</figcaption>
+        </figure>
+
         <div class="dsa-panel" aria-label="Week 14 DSA reflection">
           <div class="dsa-grid">
             <article class="dsa-card">
@@ -5663,6 +5742,10 @@
           <figcaption>
             Daycare engagement · Week 13 · October 28, 2026
           </figcaption>
+        </figure>
+        <figure class="documentation-photo">
+          <img src="week14-inside-out-presentation.png" alt="Inside Out, Germs Out project presentation title slide">
+          <figcaption>Graded project presentation · Inside Out, Germs Out · Week 14 · November 04, 2026</figcaption>
         </figure>
       </div>
     </div>
