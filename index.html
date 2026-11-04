@@ -3634,6 +3634,74 @@
       }
     }
 
+  
+    /* =========================================================
+       MOBILE INTRO — restore breathing room below headline
+       ========================================================= */
+    @media (max-width: 760px) {
+      .page-view[data-page="home"] .intro h2 {
+        margin-bottom: 26px !important;
+      }
+
+      .page-view[data-page="home"] .intro-copy {
+        padding-top: 0 !important;
+      }
+    }
+
+  
+    /* =========================================================
+       WEEK 14 REFLECTION INDEX — balanced 5 + 5 + 4
+       ========================================================= */
+
+    @media (min-width: 981px) {
+      .journal-index .section-inner {
+        grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
+        column-gap: 20px !important;
+        row-gap: 20px !important;
+      }
+
+      .week-tile,
+      .week-tile[data-week-link] {
+        grid-column: span 2 !important;
+      }
+
+      /* Row 1: Weeks 01–05. Row 2: Weeks 06–10. */
+      .week-tile[data-week-link="week6"],
+      .week-tile[data-week-link="week7"],
+      .week-tile[data-week-link="week8"],
+      .week-tile[data-week-link="week9"],
+      .week-tile[data-week-link="week10"] {
+        grid-column: span 2 !important;
+      }
+
+      /* Row 3: Weeks 11–14, centered. */
+      .week-tile[data-week-link="week11"] { grid-column: 2 / span 2 !important; }
+      .week-tile[data-week-link="week12"] { grid-column: 4 / span 2 !important; }
+      .week-tile[data-week-link="week13"] { grid-column: 6 / span 2 !important; }
+      .week-tile[data-week-link="week14"] { grid-column: 8 / span 2 !important; }
+    }
+
+    /* Keep the exact same structural rules and clay hover spacing for Week 14. */
+    .week-tile[data-week-link="week14"] {
+      border-bottom: 1px solid var(--line) !important;
+    }
+
+    @media (max-width: 980px) {
+      .week-tile[data-week-link="week14"] {
+        grid-column: span 2 !important;
+        border-top: 0 !important;
+        border-bottom: 1px solid var(--line) !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .week-tile[data-week-link="week14"] {
+        grid-column: auto !important;
+        border-top: 0 !important;
+        border-bottom: 1px solid var(--line) !important;
+      }
+    }
+
   </style>
 </head>
 
@@ -3888,6 +3956,11 @@
       <a href="#week13" class="index-item week-tile" data-week-link="week13">
         <span class="week-tile-number">13</span>
         <span class="week-tile-date">October 28 · 2026</span>
+      </a>
+
+      <a href="#week14" class="index-item week-tile" data-week-link="week14">
+        <span class="week-tile-number">14</span>
+        <span class="week-tile-date">November 04 · 2026</span>
       </a>
     </div>
   </section>
@@ -5236,6 +5309,135 @@
       </div>
     </div>
   </section>
+
+  <section class="entry week-panel" id="week14" data-week="week14">
+    <div class="section-inner">
+      <div class="entry-header">
+        <div class="entry-number">14</div>
+
+        <div>
+          <div class="entry-meta">Plan Integration · November 04, 2026</div>
+          <h2>When the Pieces Became a Project</h2>
+          <div class="entry-subtitle">
+            Bringing objectives, evidence, feasibility, stakeholders, and timelines into one coherent plan.
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-body">
+        <p>
+          Week 14 centered on our graded presentation of the revised community
+          projects. Our group presented <em>Inside Out, Germs Out: A Daycare-Based Health Education Initiative on Acute Respiratory Infection Prevention and Hygiene Promotion</em>, an
+          Inside Out-themed community project that brought the different parts of
+          our plan into one cohesive presentation. We presented the revised project
+          title and background, general and specific objectives, the IPOO or logical
+          framework, SWOT analysis, stakeholder mapping and analysis, the review of
+          related literature supporting the proposed activities for each population,
+          and the Gantt chart or implementation timeline. Seeing all of these
+          components presented together made the planning process feel less like a
+          series of separate requirements and more like one integrated project.
+        </p>
+
+        <p>
+          I was assigned to prepare the SWOT analysis for our group's populations:
+          toddlers and the caregivers or Child Development Workers who support them.
+          Among our strengths were picture-based placards, storytelling, a video,
+          and a jingle that allow children ages three to five to participate without
+          needing to read. The daily contact of teachers and CDWs with the children
+          was another strength because handwashing and respiratory-hygiene practices
+          can be reinforced even between our formal sessions.
+        </p>
+
+        <blockquote class="pull-quote">
+          A strong project plan is not only well designed; it also has to remain
+          workable when resources, routines, and real-world conditions are taken
+          into account.
+        </blockquote>
+
+        <p>
+          The SWOT also forced us to confront the parts of the plan that remain less
+          certain. Our weaknesses included an unconfirmed budget and supply plan,
+          the workload placed on both teachers and students, and gaps in assessment.
+          A child who correctly performs a prompted handwashing demonstration, for
+          example, may not necessarily follow the same steps routinely. Our
+          opportunities included possible coordination with the Intramuros Health
+          Center for symptom notification and referral, support from barangay and
+          daycare administrators, and caregivers who can continue reinforcing the
+          messages at home.
+        </p>
+
+        <p>
+          At the same time, several threats sit outside the daycare itself. Children
+          will continue to encounter respiratory exposures elsewhere, so improved
+          classroom hygiene cannot by itself guarantee fewer illnesses. Illness,
+          holidays, class cancellations, or interruptions in water and supply
+          availability could also affect the implementation schedule. Writing the
+          SWOT made it clear that even a carefully designed teaching intervention
+          still depends on funding, logistics, routines, and circumstances that the
+          project team cannot completely control.
+        </p>
+
+        <p>
+          Overall, our professors were satisfied with our revised presentation,
+          including the Inside Out-inspired way we packaged <em>Inside Out, Germs
+          Out</em>. That feedback felt rewarding after several weeks of revising and
+          refining both the content and the way the project was communicated. The
+          other three groups presented projects for the elderly, school-age children
+          and adolescents, and adults. Seeing all four plans side by side also gave
+          me a broader view of community health across the life span. The same
+          community can contain very different needs, risks, and opportunities, and
+          each population requires an approach suited to its stage of life and daily
+          context.
+        </p>
+
+        <div class="dsa-panel" aria-label="Week 14 DSA reflection">
+          <div class="dsa-grid">
+            <article class="dsa-card">
+              <div class="dsa-letter">D</div>
+              <div>
+                <strong>Discovery</strong>
+                <p>The planning tools make more sense when used together: objectives define the intended change, evidence supports the activities, SWOT tests feasibility, stakeholder analysis identifies who matters, and the Gantt chart turns the plan into a sequence that can actually be carried out.</p>
+              </div>
+            </article>
+
+            <article class="dsa-card">
+              <div class="dsa-letter">S</div>
+              <div>
+                <strong>Surprise</strong>
+                <p>Even simple-looking health-education activities can depend on variables as practical as water availability, supplies, schedules, workload, and whether observed behavior truly reflects what children do when they are not being prompted.</p>
+              </div>
+            </article>
+
+            <article class="dsa-card">
+              <div class="dsa-letter">A</div>
+              <div>
+                <strong>Affirmation</strong>
+                <p>Seeing projects for toddlers, adolescents, adults, and older persons affirmed that community interventions need to be adapted to the population rather than applying one educational approach across the life span.</p>
+              </div>
+            </article>
+
+            <article class="dsa-card challenge-card">
+              <div class="dsa-letter">C</div>
+              <div>
+                <strong>Challenge</strong>
+                <p>The challenge is keeping the project measurable and realistic while accounting for external exposures, limited resources, interruptions, and the difference between successful demonstration during assessment and sustained behavior in everyday life.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="field-note">
+          <div class="field-note-label">Field Note · 14</div>
+          <p>
+            A project becomes credible not when every component looks strong on its
+            own, but when its objectives, evidence, resources, stakeholders, and
+            timeline can hold together under real conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <main class="page-view" data-page="projects">
@@ -5247,7 +5449,7 @@
         <p>
           A running record of how our community diagnosis developed—from reassessment
           and prioritization to fieldwork, data consolidation, community validation,
-          early intervention planning, and implementation preparation.
+          early intervention planning, implementation preparation, and integrated project refinement.
         </p>
       </div>
 
@@ -5269,12 +5471,12 @@
 
         <div class="project-brief-item">
           <small>Program Direction</small>
-          <p>Age-appropriate ARI prevention and hygiene education supported by practical demonstrations, IEC materials, classroom reinforcement, and community participation.</p>
+          <p><em>Inside Out, Germs Out: A Daycare-Based Health Education Initiative on Acute Respiratory Infection Prevention and Hygiene Promotion</em> — an age-appropriate ARI prevention and hygiene education initiative supported by practical demonstrations, IEC materials, classroom reinforcement, and community participation.</p>
         </div>
 
         <div class="project-brief-item">
           <small>Current Phase</small>
-          <p>Implementation preparation: refining objectives, timelines, materials, stakeholder coordination, and activity plans.</p>
+          <p>Integrated project refinement after the graded presentation: aligning objectives, evidence, feasibility analysis, stakeholders, resources, and the implementation timeline before rollout.</p>
         </div>
       </div>
 
@@ -5388,6 +5590,23 @@
             </div>
           </div>
         </article>
+
+        <article class="project-step">
+          <div class="project-week"><span>Week</span>14</div>
+          <div class="project-main">
+            <h3>Revised Project Presentation &amp; Feasibility Review</h3>
+            <div class="project-columns">
+              <div>
+                <small>Activities &amp; Reflections</small>
+                <p>Presented the revised project, <em>Inside Out, Germs Out: A Daycare-Based Health Education Initiative on Acute Respiratory Infection Prevention and Hygiene Promotion</em>, in a graded Inside Out-themed class presentation. The presentation integrated the project title and background, general and specific objectives, IPOO or logical framework, SWOT analysis, stakeholder mapping and analysis, RRL support for population-specific activities, and the Gantt chart. I prepared the SWOT analysis for toddlers and caregivers or Child Development Workers.</p>
+              </div>
+              <div>
+                <small>Discoveries &amp; Challenges</small>
+                <p>The integrated presentation showed how the planning tools support one another, while the SWOT highlighted practical dependencies such as budget, supplies, workload, assessment validity, external respiratory exposure, and possible schedule or resource disruptions. Our professors were satisfied with both the revised plan and the Inside Out-themed presentation, but feasibility remains something the project must continue to account for before implementation.</p>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -5460,16 +5679,16 @@
       <h2>The journal continues.</h2>
 
       <p>
-        Thirteen weeks into FCM 3, I am beginning to see community medicine less as a
+        Fourteen weeks into FCM 3, I am beginning to see community medicine less as a
         separate subject and more as a way of understanding how health actually happens.
         The work has moved from frameworks and case discussions to community diagnosis,
         partnership, adaptation, field data collection, analysis, community validation,
-        intervention planning, and now the practical preparation needed before
-        implementation. As objectives become timelines, materials, stakeholder
-        conversations, and real encounters with the people we hope to serve, the project
-        feels increasingly connected to the realities of the community rather than to a
-        sequence of classroom requirements. This portfolio is still in progress, and I
-        expect the next entries to keep challenging how I connect clinical thinking with
+        intervention planning, implementation preparation, and now the integration of
+        objectives, evidence, feasibility analysis, stakeholders, and timelines into one
+        complete project plan. Presenting the revised projects also made clear that a
+        community intervention is only as workable as the resources, routines, partnerships,
+        and real-world conditions surrounding it. This portfolio is still in progress, and
+        I expect the next entries to keep challenging how I connect clinical thinking with
         the realities of families and communities.
       </p>
     </div>
@@ -5630,7 +5849,7 @@
     function routeFromHash() {
       const hash = location.hash.replace("#", "");
 
-      if (/^week(?:1[0-3]|[1-9])$/.test(hash)) {
+      if (/^week(?:1[0-4]|[1-9])$/.test(hash)) {
         showPage("reflections", {
           updateUrl: false,
           scrollTop: false,
