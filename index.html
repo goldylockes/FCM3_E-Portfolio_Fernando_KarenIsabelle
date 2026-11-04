@@ -3776,6 +3776,94 @@
       }
     }
 
+  
+    /* =========================================================
+       DOCUMENTATION — authoritative equal-item reset
+       Removes legacy per-photo sizing from earlier gallery versions.
+       ========================================================= */
+
+    .documentation-gallery .documentation-photo,
+    .documentation-gallery .documentation-photo:nth-child(1),
+    .documentation-gallery .documentation-photo:nth-child(2),
+    .documentation-gallery .documentation-photo:nth-child(3),
+    .documentation-gallery .documentation-photo:nth-child(4),
+    .documentation-gallery .documentation-photo:nth-child(5) {
+      width: 100% !important;
+      max-width: none !important;
+      min-width: 0 !important;
+      margin: 0 !important;
+      justify-self: stretch !important;
+      align-self: start !important;
+    }
+
+    .documentation-gallery .documentation-photo img,
+    .documentation-gallery .documentation-photo:nth-child(1) img,
+    .documentation-gallery .documentation-photo:nth-child(2) img,
+    .documentation-gallery .documentation-photo:nth-child(3) img,
+    .documentation-gallery .documentation-photo:nth-child(4) img,
+    .documentation-gallery .documentation-photo:nth-child(5) img {
+      display: block !important;
+      width: 100% !important;
+      max-width: none !important;
+      aspect-ratio: 4 / 3 !important;
+      object-fit: cover !important;
+    }
+
+    @media (min-width: 981px) {
+      .documentation-gallery {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+        gap: 34px 30px !important;
+      }
+
+      .documentation-gallery .documentation-photo:nth-child(1),
+      .documentation-gallery .documentation-photo:nth-child(2),
+      .documentation-gallery .documentation-photo:nth-child(3) {
+        grid-column: span 2 !important;
+      }
+
+      .documentation-gallery .documentation-photo:nth-child(4) {
+        grid-column: 2 / span 2 !important;
+      }
+
+      .documentation-gallery .documentation-photo:nth-child(5) {
+        grid-column: 4 / span 2 !important;
+      }
+    }
+
+    @media (max-width: 980px) and (min-width: 761px) {
+      .documentation-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .documentation-gallery .documentation-photo:nth-child(1),
+      .documentation-gallery .documentation-photo:nth-child(2),
+      .documentation-gallery .documentation-photo:nth-child(3),
+      .documentation-gallery .documentation-photo:nth-child(4) {
+        grid-column: auto !important;
+      }
+
+      .documentation-gallery .documentation-photo:nth-child(5) {
+        grid-column: 1 / -1 !important;
+        width: calc(50% - 15px) !important;
+        justify-self: center !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .documentation-gallery {
+        grid-template-columns: 1fr !important;
+      }
+
+      .documentation-gallery .documentation-photo:nth-child(1),
+      .documentation-gallery .documentation-photo:nth-child(2),
+      .documentation-gallery .documentation-photo:nth-child(3),
+      .documentation-gallery .documentation-photo:nth-child(4),
+      .documentation-gallery .documentation-photo:nth-child(5) {
+        grid-column: auto !important;
+        width: 100% !important;
+      }
+    }
+
   </style>
 </head>
 
