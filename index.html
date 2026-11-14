@@ -3910,6 +3910,42 @@
       }
     }
 
+  
+    /* =========================================================
+       DOCUMENTATION — four-photo 2×2 layout
+       Week 14 presentation image remains in the reflection only.
+       ========================================================= */
+    @media (min-width: 761px) {
+      .documentation-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 34px 30px !important;
+      }
+
+      .documentation-gallery .documentation-photo,
+      .documentation-gallery .documentation-photo:nth-child(1),
+      .documentation-gallery .documentation-photo:nth-child(2),
+      .documentation-gallery .documentation-photo:nth-child(3),
+      .documentation-gallery .documentation-photo:nth-child(4),
+      .documentation-gallery .documentation-photo:nth-child(5) {
+        grid-column: auto !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        justify-self: stretch !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .documentation-gallery {
+        grid-template-columns: 1fr !important;
+      }
+
+      .documentation-gallery .documentation-photo {
+        width: 100% !important;
+        grid-column: auto !important;
+      }
+    }
+
   </style>
 </head>
 
@@ -5884,10 +5920,6 @@
           <figcaption>
             Daycare engagement · Week 13 · October 28, 2026
           </figcaption>
-        </figure>
-        <figure class="documentation-photo">
-          <img src="week14-inside-out-presentation-cropped.png" alt="Inside Out, Germs Out project presentation title slide" style="object-position:center center;">
-          <figcaption>Graded project presentation · Inside Out, Germs Out · Week 14 · November 04, 2026</figcaption>
         </figure>
       </div>
     </div>
